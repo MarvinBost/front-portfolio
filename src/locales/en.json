@@ -1,0 +1,91 @@
+{
+    "name": "Marvin Bost",
+    "title": "Web Developer",
+    "description": "Passionate developer of custom web solutions and customer experiences. Let's turn your ideas into digital reality.",
+    "education": "Education",
+    "educations": [
+        {
+            "title": "Software Developer",
+            "date": "July 2018 - March 2019",
+            "place": "AFPA",
+            "description": "Intensive 9-month software development training. Learned languages include HTML, CSS, Javascript, JQuery, PHP, SQL, ERD, C#, etc.",
+            "link": "https://www.banque.di.afpa.fr/EspaceEmployeursCandidatsActeurs/Download.aspx?i=d9dd0de1-e689-4bd2-9efd-164369c06688&n=DL%202007.pdf&d=1"
+        },
+        {
+            "title": "Web Developer",
+            "date": "April 2020 - October 2020",
+            "place": "OpenClassrooms",
+            "description": "Intensive 6-month web development training. Learned languages include HTML, CSS, SCSS, Javascript, VueJS, NodeJS, ExpressJS, SEO, Accessibility, MongoDB, Mongoose, Git, etc.",
+            "link": "https://www.openclassrooms.com/en/paths/185-web-developer"
+        }
+    ],
+    "experience": "Experience",
+    "experiences": [
+        {
+            "title": "Web Developer",
+            "date": "2021 - Present",
+            "place": "Freelance",
+            "link": "https://www.marvinbost.fr"
+        },
+        {
+            "title": "Front-End Web Developer",
+            "date": "2021 - 2023",
+            "place": "Wancom",
+            "link": "https://www.wanview.fr"
+        }
+    ],
+    "skills": "Skills",
+    "skillsList": [
+        {
+            "html": "HTML",
+            "css": "CSS",
+            "scss": "SCSS",
+            "javascript": "Javascript",
+            "react": "React",
+            "nodejs": "NodeJS",
+            "expressjs": "ExpressJS",
+            "sql": "SQL",
+            "mongodb": "MongoDB",
+            "git": "Git",
+            "github": "Github"
+        },
+        {
+            "cybersecurity": "XSS, SQL Injection",
+            "seo": "SEO",
+            "accessibility": "Accessibility",
+            "responsive": "Responsive"
+        }
+    ],
+    "contact": "Contact",
+    "contactList": [
+        {
+            "title": "LinkedIn",
+            "value": "linkedin.com/in/marvin-bost",
+            "link": "https://www.linkedin.com/in/marvin-bost/",
+            "icon": "fab fa-linkedin"
+        },
+        {
+            "title": "Github",
+            "value": "github.com/marvinbost",
+            "link": "https://www.github.com/marvinbost/",
+            "icon": "fab fa-github"
+        }
+    ],
+    "projects": "Projects",
+    "projectsList": [
+        {
+            "title": "Project 1",
+            "description": "Project 1 description",
+            "link": "https://www.linkedin.com/in/marvin-bost/",
+            "image": "https://via.placeholder.com/150",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "React",
+                "NodeJS",
+                "SQL"
+            ]
+        }
+    ]
+}

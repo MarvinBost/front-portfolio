@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+@import "./styles/variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  @media (prefers-color-scheme: dark) {
+    background-color: map-get($map: $colors, $key: "dark");
+    color: map-get($map: $colors, $key: "light");
+  }
+  @media (prefers-color-scheme: light) {
+    background-color: map-get($map: $colors, $key: "light");
+    color: map-get($map: $colors, $key: "dark");
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}

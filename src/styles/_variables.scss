@@ -1,0 +1,90 @@
+$colors: (
+  "blue": #007bff,
+  "indigo": #6610f2,
+  "purple": #6f42c1,
+  "pink": #e83e8c,
+  "red": #dc3545,
+  "orange": #fd7e14,
+  "yellow": #ffc107,
+  "green": #28a745,
+  "teal": #20c997,
+  "cyan": #17a2b8,
+  "white": #fff,
+  "gray": #6c757d,
+  "gray-dark": #343a40,
+  "primary": #e67e22,
+  "secondary": #d35400,
+  "success": #28a745,
+  "info": #bdc3c7,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #ecf0f1,
+  "dark": #151515,
+);
+
+.animated {
+  &.fadeInUp {
+    animation-name: fadeInUp;
+  }
+  &.fadeInDown {
+    animation-name: fadeInDown;
+  }
+  &.fadeInLeft {
+    animation-name: fadeInLeft;
+  }
+  &.fadeInRight {
+    animation-name: fadeInRight;
+  }
+  animation: ease-in-out forwards;
+  animation-duration: 0.5s;
+  @for $i from 1 through 10 {
+    &.delay-#{$i} {
+      // .delay-1, .delay-2, .delay-3, ...
+      animation-delay: 0.5s * $i;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

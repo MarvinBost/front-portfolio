@@ -1,0 +1,106 @@
+@import "../../../styles/variables";
+
+.me {
+  width: 100%;
+  height: calc(100vh - 6rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  @media screen and (max-width: 768px) {
+    height: auto;
+    padding: 2rem 0;
+    justify-content: space-evenly;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 1rem 0;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__aside {
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // border: 0.5em solid map-get($map: $colors, $key: "primary");
+    // border-radius: 20px;
+    padding: 2rem;
+    @media screen and (max-width: 768px) {
+      width: 50%;
+      padding: 0;
+    }
+    @media screen and (max-width: 480px) {
+      width: 80%;
+      order: 2;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__image {
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    opacity: 0;
+    @media screen and (max-width: 768px) {
+      width: 40%;
+    }
+    @media screen and (max-width: 480px) {
+      width: 80%;
+      order: 1;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @media (prefers-color-scheme: dark) {
+        mix-blend-mode: lighten;
+      }
+      @media (prefers-color-scheme: light) {
+        mix-blend-mode: darken;
+      }
+    }
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    position: relative;
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: 480px) {
+      text-align: center;
+    }
+
+    &--color {
+      color: map-get($map: $colors, $key: "primary");
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+        width: 100%;
+        height: 0.5rem;
+        background-color: map-get($map: $colors, $key: "primary");
+        z-index: -1;
+      }
+    }
+  }
+  &__description {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+    @media screen and (max-width: 480px) {
+      text-align: center;
+    }
+  }
+}

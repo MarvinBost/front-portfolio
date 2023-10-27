@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  opacity: 0;
+  &__brand {
+    > p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: map-get($map: $colors, $key: "primary");
+    }
+  }
+  &__language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > img {
+      margin-right: 0.5rem;
+      width: 35px;
+      height: 25px;
+      object-fit: cover;
+      padding: 0.2rem;
+      &.active {
+        background-color: map-get($map: $colors, $key: "primary");
+        border-radius: 5px;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > a {
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+      @media (prefers-color-scheme: dark) {
+        color: map-get($map: $colors, $key: "light");
+      }
+      @media (prefers-color-scheme: light) {
+        color: map-get($map: $colors, $key: "dark");
+      }
+
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: map-get($map: $colors, $key: "primary");
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease-in-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+      &.active {
+        &::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+}
