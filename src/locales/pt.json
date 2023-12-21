@@ -1,91 +1,138 @@
 {
+    "navbar": {
+        "title": "Marvin Bost",
+        "menus": [
+            {
+                "title": "Realizações",
+                "type": "link",
+                "link": "works"
+            },
+            {
+                "title": "Serviços",
+                "type": "dropdown",
+                "menus": [
+                    {
+                        "title": "Website",
+                        "type": "link",
+                        "link": "#web"
+                    },
+                    {
+                        "title": "Consultor",
+                        "type": "link",
+                        "link": "#consultant"
+                    },
+                    {
+                        "title": "Mentor / Instrutor",
+                        "type": "link",
+                        "link": "#mentor"
+                    }
+                ]
+            },
+            {
+                "title": "Contato",
+                "type": "link",
+                "link": "#contact"
+            }
+        ]
+    },
     "name": "Marvin Bost",
-    "title": "Desenvolvedor Web",
-    "description": "Desenvolvedor apaixonado por soluções web personalizadas e experiências para o cliente. Vamos transformar suas ideias em realidade digital.",
-    "education": "Educação",
-    "educations": [
-        {
-            "title": "Desenvolvedor de Software",
-            "date": "Julho de 2018 a março de 2019",
-            "place": "AFPA",
-            "description": "Treinamento intensivo de 9 meses em desenvolvimento de software. Aprendizado de linguagens incluindo HTML, CSS, Javascript, JQuery, PHP, SQL, ERD, C#, etc.",
-            "link": "https://www.banque.di.afpa.fr/EspaceEmployeursCandidatsActeurs/Download.aspx?i=d9dd0de1-e689-4bd2-9efd-164369c06688&n=DL%202007.pdf&d=1"
+    "lastname": "Desenvolvimento",
+    "title": "Desenvolvedor Web Freelancer",
+    "description": "Desenvolvedor apaixonado por soluções web personalizadas e experiências para clientes. Vamos transformar suas ideias em realidade digital.",
+    "works": {
+        "title": "Meus Trabalhos",
+        "description": "Explore meus trabalhos mais recentes",
+        "items": [
+            {
+                "title": "Website - Joalheria",
+                "description": "Website de vitrine para uma joalheria",
+                "link": "#project/1",
+                "image": "projects/bijouterie.png",
+                "tags": [
+                    "Website",
+                    "E-commerce",
+                    "Design"
+                ]
+            },
+            {
+                "title": "Website Dinâmico - Servidor Minecraft",
+                "description": "Website dinâmico para um servidor Minecraft",
+                "link": "#project/2",
+                "image": "projects/minecraft.png",
+                "tags": [
+                    "Website Dinâmico",
+                    "Servidor Minecraft",
+                    "Design"
+                ]
+            },
+            {
+                "title": "Website Dinâmico - Solução de Display Digital Wanview",
+                "description": "Website dinâmico para uma solução de display digital Wanview",
+                "link": "#project/3",
+                "image": "projects/wanview.png",
+                "tags": [
+                    "Website Dinâmico",
+                    "Display Digital",
+                    "Design"
+                ]
+            },
+            {
+                "title": "Bot do Discord - Gerenciamento de Servidores",
+                "description": "Bot do Discord para gerenciamento de servidores",
+                "link": "#project/4",
+                "image": "projects/discord.png",
+                "tags": [
+                    "Bot do Discord",
+                    "Gerenciamento de Clientes"
+                ]
+            },
+            {
+                "title": "Aplicativo de Gerenciamento de Clientes",
+                "description": "Aplicativo de gerenciamento de clientes",
+                "link": "#project/5",
+                "image": "projects/clients.png",
+                "tags": [
+                    "Aplicativo",
+                    "Gerenciamento de Clientes"
+                ]
+            }
+        ]
+    },
+    "contact": {
+        "title": "Entre em Contato",
+        "description": "Tem um projeto? Quer discutir algo? Sinta-se à vontade para entrar em contato",
+        "form": {
+            "name": "Nome",
+            "email": "E-mail",
+            "message": "Mensagem",
+            "submit": "Enviar"
         },
-        {
-            "title": "Desenvolvedor Web",
-            "date": "Abril de 2020 a outubro de 2020",
-            "place": "OpenClassrooms",
-            "description": "Treinamento intensivo de 6 meses em desenvolvimento web. Aprendizado de linguagens incluindo HTML, CSS, SCSS, Javascript, VueJS, NodeJS, ExpressJS, SEO, Acessibilidade, MongoDB, Mongoose, Git, etc.",
-            "link": "https://www.openclassrooms.com/pt/paths/185-web-developer"
-        }
-    ],
-    "experience": "Experiência",
-    "experiences": [
-        {
-            "title": "Desenvolvedor Web",
-            "date": "2021 - Presente",
-            "place": "Freelance",
-            "link": "https://www.marvinbost.fr"
-        },
-        {
-            "title": "Desenvolvedor Web Front-End",
-            "date": "2021 - 2023",
-            "place": "Wancom",
-            "link": "https://www.wanview.fr"
-        }
-    ],
-    "skills": "Habilidades",
-    "skillsList": [
-        {
-            "html": "HTML",
-            "css": "CSS",
-            "scss": "SCSS",
-            "javascript": "Javascript",
-            "react": "React",
-            "nodejs": "NodeJS",
-            "expressjs": "ExpressJS",
-            "sql": "SQL",
-            "mongodb": "MongoDB",
-            "git": "Git",
-            "github": "Github"
-        },
-        {
-            "cybersecurity": "XSS, Injeção de SQL",
-            "seo": "SEO",
-            "accessibility": "Acessibilidade",
-            "responsive": "Responsivo"
-        }
-    ],
-    "contact": "Contato",
-    "contactList": [
-        {
-            "title": "LinkedIn",
-            "value": "linkedin.com/in/marvin-bost",
-            "link": "https://www.linkedin.com/in/marvin-bost/",
-            "icon": "fab fa-linkedin"
-        },
-        {
-            "title": "Github",
-            "value": "github.com/marvinbost",
-            "link": "https://www.github.com/marvinbost/",
-            "icon": "fab fa-github"
-        }
-    ],
-    "projects": "Projetos",
-    "projectsList": [
-        {
-            "title": "Projeto 1",
-            "description": "Descrição do projeto 1",
-            "link": "https://www.linkedin.com/in/marvin-bost/",
-            "image": "https://via.placeholder.com/150",
-            "technologies": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "React",
-                "NodeJS",
-                "SQL"
-            ]
-        }
-    ]
+        "others": [
+            {
+                "title": "Malt",
+                "link": "https://www.malt.fr/profile/marvinbost",
+                "icon": "malt"
+            },
+            {
+                "title": "E-mail",
+                "link": "redirect('mail')",
+                "icon": "mail"
+            },
+            {
+                "title": "Telefone",
+                "link": "redirect('phone')",
+                "icon": "phone"
+            },
+            {
+                "title": "Google",
+                "link": "redirect('google')",
+                "icon": "google"
+            },
+            {
+                "title": "Páginas Amarelas",
+                "link": "redirect('pagejaune')",
+                "icon": "pagejaune"
+            }
+        ]
+    }
 }

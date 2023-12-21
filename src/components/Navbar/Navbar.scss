@@ -6,6 +6,8 @@
   align-items: center;
   padding: 1rem 0;
   opacity: 0;
+  position: relative;
+  z-index: 99999;
   &__brand {
     > p {
       font-size: 1.5rem;
@@ -33,10 +35,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    > li > span,
     > a {
+      user-select: none !important;
+    }
+    > li {
       margin-right: 1rem;
       font-size: 1.2rem;
       font-weight: 400;
+      cursor: pointer;
+
       @media (prefers-color-scheme: dark) {
         color: map-get($map: $colors, $key: "light");
       }
@@ -67,6 +75,71 @@
           transform-origin: left;
         }
       }
+    }
+    &--dropdown {
+      position: relative;
+      &__list {
+        position: absolute;
+        top: 120%;
+        left: 0;
+        width: 120px;
+        @media (prefers-color-scheme: dark) {
+          background-color: map-get($map: $colors, $key: "dark");
+        }
+        @media (prefers-color-scheme: light) {
+          background-color: map-get($map: $colors, $key: "light");
+        }
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
+        &--item {
+          padding: 1rem;
+          border-bottom: 1px solid map-get($map: $colors, $key: "dark");
+          &:last-child {
+            border-bottom: none;
+          }
+          &:hover {
+            background-color: map-get($map: $colors, $key: "primary");
+            > a {
+              @media (prefers-color-scheme: dark) {
+                color: map-get($map: $colors, $key: "light");
+              }
+              @media (prefers-color-scheme: light) {
+                color: map-get($map: $colors, $key: "dark");
+              }
+            }
+          }
+          > a {
+            font-size: 1rem;
+            font-weight: 400;
+            @media (prefers-color-scheme: dark) {
+              color: map-get($map: $colors, $key: "light");
+            }
+            @media (prefers-color-scheme: light) {
+              color: map-get($map: $colors, $key: "dark");
+            }
+          }
+        }
+        
+      }
+
+      &:hover .navbar__links--dropdown__list,
+      &:focus-within .navbar__links--dropdown__list,
+       .navbar__links--dropdown__list:hover,
+       .navbar__links--dropdown__list:focus-within,
+        .navbar__links--dropdown__list--item:hover,
+        .navbar__links--dropdown__list--item:focus-within {
+
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+        }
     }
   }
 }

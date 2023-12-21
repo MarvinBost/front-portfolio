@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: red 1px solid;
+  // border: red 1px solid;
 }
 
 body {
@@ -46,3 +46,36 @@ input {
   border: none;
   outline: none;
 }
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  animation: 0.5s scroll ease-in-out;
+}
+
+::-webkit-scrollbar-track {
+  @media (prefers-color-scheme: dark) {
+    background: map-get($map: $colors, $key: "dark");
+  }
+  @media (prefers-color-scheme: light) {
+    background: map-get($map: $colors, $key: "light");
+  }
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: map-get($map: $colors, $key: "primary");
+  border-radius: 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

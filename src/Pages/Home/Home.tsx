@@ -1,8 +1,8 @@
-import "./Me.scss";
+import "./Home.scss";
 import { useTranslation } from "react-i18next";
-import avatar from "../../../assets/photodeprofil.jpg";
+import avatar from "../../assets/photodeprofil.jpg";
 
-function Me() {
+function Home() {
   const { t } = useTranslation();
 
   return (
@@ -20,4 +20,4 @@ function Me() {
   );
 }
 
-export default Me;
+export default Home;

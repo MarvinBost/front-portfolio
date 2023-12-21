@@ -1,7 +1,7 @@
 // import { useState } from "react";
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
-import Me from "./components/Sections/Me/Me";
+import AppRoutes from "./Routes/Routes";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -10,8 +10,10 @@ function App() {
     <div className="container">
       <header>
         <Navbar />
-        <Me />
       </header>
+      <main>
+        <AppRoutes />
+      </main>
     </div>
   );
 }
