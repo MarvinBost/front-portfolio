@@ -4,8 +4,6 @@ import Navbar from "./components/Navbar/Navbar";
 import AppRoutes from "./Routes/Routes";
 
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
     <div className="container">
       <header>
@@ -14,6 +12,9 @@ function App() {
       <main>
         <AppRoutes />
       </main>
+      <footer>
+        <p>Footer</p>
+      </footer>
     </div>
   );
 }

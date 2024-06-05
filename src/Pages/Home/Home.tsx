@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 import avatar from "../../assets/photodeprofil.jpg";
 
 function Home() {
+  // eslint-disable-next-line no-debugger
+  debugger;
   const { t } = useTranslation();
 
   return (

@@ -7,11 +7,6 @@ import { Works } from "../../types/works.interface";
 
 function Projects() {
   const { t } = useTranslation();
-  // const [projects, setProjects] = useState<Project[]>([]);
-  // useProjects().then((projects) => {
-  //   console.log(projects);
-  //   //setProjects(projects);
-  // });
 
   return (
     <section className="projects animated delay-2 fadeInLeft">
