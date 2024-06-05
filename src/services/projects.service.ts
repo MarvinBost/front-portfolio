@@ -4,8 +4,13 @@
 import { useTranslation } from "react-i18next";
 import i18n from "../services/translate";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { useEffect, useState } from "react";
-import { Project } from "../types/project.interface";
+import { useState } from "react";
+
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+}
 
 // services
 // export const useProjects = (): Project[] => {
